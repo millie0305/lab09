@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9 - HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form method="post" action="#">
+
+        <!-- Text Inputs for ACNH-related queries -->
+        <label for="favActivity">Favorite Activity in ACNH:</label><br>
+        <input type="text" id="favActivity" name="favActivity"><br><br>
+
+        <label for="dreamVillager">Dream Villager to Invite:</label><br>
+        <input type="text" id="dreamVillager" name="dreamVillager"><br><br>
+
+        <label for="islandName">Your Island's Name:</label><br>
+        <input type="text" id="islandName" name="islandName"><br><br>
+
+        <!-- Checkboxes for Favorite Features -->
+        <fieldset>
+            <legend>Favorite Features in ACNH:</legend>
+            <label for="featureFishing">
+                <input type="checkbox" id="featureFishing" name="features" value="Fishing"> Fishing
+            </label><br>
+            <label for="featureDecorating">
+                <input type="checkbox" id="featureDecorating" name="features" value="Decorating"> Island Decorating
+            </label><br>
+            <label for="featureEvents">
+                <input type="checkbox" id="featureEvents" name="features" value="Events"> Special Events
+            </label><br>
+        </fieldset><br>
+
+        <!-- Radio Buttons for Preferred Seasons -->
+        <fieldset>
+            <legend>Preferred Season in ACNH:</legend>
+            <label for="seasonSpring">
+                <input type="radio" id="seasonSpring" name="season" value="Spring"> Spring
+            </label><br>
+            <label for="seasonSummer">
+                <input type="radio" id="seasonSummer" name="season" value="Summer"> Summer
+            </label><br>
+            <label for="seasonFall">
+                <input type="radio" id="seasonFall" name="season" value="Fall"> Fall
+            </label><br>
+            <label for="seasonWinter">
+                <input type="radio" id="seasonWinter" name="season" value="Winter"> Winter
+            </label><br>
+        </fieldset><br>
+
+        <!-- Text Area for Additional Comments -->
+        <label for="additionalComments">Additional Comments:</label><br>
+        <textarea id="additionalComments" name="additionalComments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Send to Isabelle">
+    </form>
+</body>
+</html>
